@@ -232,4 +232,33 @@
       background: #f6f6f6;
     }
   }
+
+  // File type and external link icons
+
+  a[href^="http://"]:after, a[href^="https://"]:after {
+  content: "\f08e";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+}
+  /* Strip from links to own domain or with class no_icon */
+  a[href^="http://www.assembly.org"]:after, a[href^="https://www.assembly.org"]:after, a[href^="http://assembly.org"]:after, a[href^="https://assembly.org"]:after, a.no_icon:after {
+  content:"" !important;
+  padding-left: 0;
+  }
+
+  a[href$='.pdf'] {
+  content: "\f1c1";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+  }
+
+
 }
