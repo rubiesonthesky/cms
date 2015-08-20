@@ -82,12 +82,17 @@
 
   .logocontainer {
     float: left;
-    width: 200px;
+    min-width: 150px;
     padding-bottom: 20px;
+    text-align: center;
+    width: 30%;
 
     .logo {
-      width: 200px;
+      display: auto;
+      margin: auto;
       margin-bottom: 8px;
+      max-width: 250px;
+      width: 100%;
     }
 
     .date, .location {
