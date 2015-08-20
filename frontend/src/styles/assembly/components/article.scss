@@ -250,8 +250,28 @@
   padding-left: 0;
   }
 
-  a[href$='.pdf'] {
+  a[href$='.pdf']:after {
   content: "\f1c1";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+  }
+
+  a[href$='.png']:after {
+  content: "\f1c5";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 3px;
+  }
+
+  a[href$='.zip']:after {
+  content: "\f1c6";
   font-family: FontAwesome;
   font-weight: normal;
   font-style: normal;
