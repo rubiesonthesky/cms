@@ -14,6 +14,7 @@
 
 <h3 ng-repeat-start="day in sch.days" id="{{:: day | lowercase }}" ng-bind="::day"></h3>
 
+<!--
 <p class="event"
       ng-repeat="event in sch.eventsByDay[day] | filter:sch.search track by event.id"
       id="{{:: event.id }}"
@@ -25,7 +26,7 @@
         ongoing: event.isOngoing
       }"
    ng-repeat-end>
-
+-->
   <span class="tmptime" ng-bind=":: event.startTime.isSame(sch.eventsByDay[day][$index - 1].startTime) ? '' : event.startTime.format('HH:mm')"></span>
       
         <h4>
@@ -54,4 +55,4 @@
         </small>
         <span class="description no-mobile" ng-bind=":: event.description"></span>
       
-</p>
+<!--</p>-->
