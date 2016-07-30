@@ -4,6 +4,7 @@
 <p class="filter">filter:
   <span>
     <a ng-repeat="flag in sch.flags" ng-click="sch.search = flag">{{:: flag }}</a>
+    <a ng-repeat="category in sch.categories" ng-click="sch.search = category">{{:: category }}</a>
     <a ng-click="sch.search = null">{{:: sch.locale.all }}</a>
   </span>
   <span class="input-container">
