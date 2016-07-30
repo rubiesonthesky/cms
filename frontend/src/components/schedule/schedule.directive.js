@@ -78,6 +78,8 @@
     //     return event.flags.indexOf(flag) === -1;
     //   });
     // });
+    
+    vm.categories = _(vm.events).pluck('categories').flatten().uniq().valueOf();
 
     // Figure out event days.
     vm.days = _(vm.events).pluck('startTime').invoke('format', 'dddd').uniq().valueOf();
