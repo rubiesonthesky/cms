@@ -12,7 +12,7 @@
       search: 'Search',
       atTime: ' at',
       atDay: 'on',
-      all: 'all'
+      all: '[all]'
     },
     fi: {
       ends: 'päättyy',
@@ -24,7 +24,7 @@
       search: 'Etsi',
       atTime: 'na klo',
       atDay: '',
-      all: 'kaikki'
+      all: '[kaikki]'
     }
   };
 

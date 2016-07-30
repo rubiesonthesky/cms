@@ -25,17 +25,17 @@ asm-schedule {
     margin: 0;
   }
   .days,
-  .flags {
+  .flags,
+  .categories {
     display: flex;
     justify-content: space-around;
-    font-size: 16px;
-  }
-  .flags {
-    justify-content: space-between;
+    font-size: 100%;
     a {
       margin: 0 14px;
     }
-    font-size: 100%;
+  }
+  .days {
+    font-size: 16px;
   }
   .categories ul {
     list-style-type: none;
@@ -43,7 +43,7 @@ asm-schedule {
     padding: 0;
   }
   .categories li {
-    display: inline;
+    display: inline-block;
   }
   th.subtitle {
     padding: 18px;
@@ -109,14 +109,6 @@ asm-schedule {
     display: none;
   }
   @media screen and (max-width: 680px) {
-  /*.categories ul {
-    list-style-type: initial;
-    margin: initial;
-    padding: initial;
-  }
-  .categories li {
-    display: initial;
-  }*/
     .tmptime,
     .no-mobile {
       display: none;
