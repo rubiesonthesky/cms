@@ -37,13 +37,13 @@ asm-schedule {
     }
     font-size: 100%;
   }
-  ul.categories {
+  .categories ul {
     display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  .categories a {
+  .categories ul a {
     display: block;
   }
   th.subtitle {
