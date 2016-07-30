@@ -38,13 +38,12 @@ asm-schedule {
     font-size: 100%;
   }
   .categories ul {
-    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  .categories ul a {
-    display: block;
+  .categories li {
+    display: inline;
   }
   th.subtitle {
     padding: 18px;
@@ -110,6 +109,14 @@ asm-schedule {
     display: none;
   }
   @media screen and (max-width: 680px) {
+  /*.categories ul {
+    list-style-type: initial;
+    margin: initial;
+    padding: initial;
+  }
+  .categories li {
+    display: initial;
+  }*/
     .tmptime,
     .no-mobile {
       display: none;
