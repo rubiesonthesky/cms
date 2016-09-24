@@ -216,7 +216,8 @@ CMS_PLACEHOLDER_CONF = {
 
     # Frontpage
     'call_for_action': {'plugins': ['LinkPlugin']},
-    'main_sponsors': {'plugins': ['PicturePlugin']},
+    'main_sponsors': {'plugins': ['PicturePlugin']},,
+    'side_sponsors': {'plugins': ['PicturePlugin']},
     'quick_links': {'plugins': ['LinkPlugin']},
 
     # Article page
